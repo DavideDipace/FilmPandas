@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Film</title>
+    </head>
+    <body>
+        <form action="/radio" method = "GET">
+            {% for lingua in list %}
+                <input type="radio" name = "lingua" value="{{lingua}}">{{lingua}}</input> <br>
+            {% endfor %}
+            <p><input type = "submit" value = "Clicca per conoscere i dati" /></p>
+        </form>
+    </body>
+</html>
